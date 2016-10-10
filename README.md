@@ -17,5 +17,7 @@ See the [EasyEngine documentation](https://easyengine.io/docs/) for command line
 
 ### Box info
 Ubuntu 16.04.1
+
 EasyEngine 3.7.4
+
 Avahi Daemon for multicast DNS.
