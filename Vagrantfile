@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "public_network"
   config.vm.post_up_message = "*******************************************\n\nIf this is the first boot of this box,\nyou will need to reboot it \nbefore you can access it by hostname\n\n*******************************************\n\nLaser Red Neutrino is now running on: #{host_name}.local"
   config.vm.provision :shell, inline: "hostnamectl set-hostname #{host_name}"
-
+  config.vm.synced_folder "www/", "/var/www"
   # Fix for slow external network connections
   config.vm.provider :virtualbox do |vb|
     vb.memory = 1024 #1 gig of RAM, if you're having speed problems and have a decent amount of RAM 2048 is probably a better number
