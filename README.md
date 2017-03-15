@@ -11,7 +11,7 @@ An uncluttered Vagrant setup for building PHP websites.
 ### Info
 This Vagrant box uses [EasyEngine](https://easyengine.io) so creating new sites is as simple as typing:
 
-`sudo ee site create http://your-hostname.local`
+`sudo ee site create your-hostname.local`
 
 See the [EasyEngine documentation](https://easyengine.io/docs/) for command line switches for adding PHP, MySQL, WordPress etc.
 
